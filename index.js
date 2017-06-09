@@ -1,5 +1,3 @@
-
-
 const express = require('express');
 const bodyParser = require('body-parser');
 var https = require('https');
@@ -40,7 +38,7 @@ restService.post('/echo', function(req, res) {
                 // console.log("obj1 : "+obj1)
                 return res.json({
          speech: obj.items[0].link,
-             displayText: obj,
+             displayText: obj.items[0].link,
             source: 'webhook-echo-sample'
       });
     //return res.json(obj);
