@@ -37,7 +37,7 @@ restService.post('/echo', function(req, res) {
 //)
                 // console.log("obj1 : "+obj1)
                 return res.json({
-         speech: href=obj.items[0].link,
+         speech: "<a href='"+obj.items[0].link+"'></a>",
              displayText: obj.items[0].link,
             source: 'webhook-echo-sample'
       });
